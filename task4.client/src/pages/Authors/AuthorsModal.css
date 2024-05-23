@@ -1,0 +1,41 @@
+.modal-container{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 250px;
+    background-color: black;
+    padding: 0.8em;
+}
+
+.close-button{
+    text-align: right;
+}
+
+.close-button button{
+    padding: 0;
+    background-color: inherit;
+    border: 0;
+}
+
+.close-button button:hover{
+    color: red;
+}
+
+.form-group{
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
