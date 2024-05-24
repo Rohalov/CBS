@@ -19,7 +19,7 @@ namespace Task4.Server.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<List<Book>>> GetAllAuthors()
+        public async Task<ActionResult<List<Book>>> GetAllBooks()
         {
             var books = await _bookService.GetAllBooks();
             if (books == null)

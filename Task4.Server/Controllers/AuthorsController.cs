@@ -66,7 +66,7 @@ namespace Task4.Server.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult> DeleteEntryFactor([FromRoute] int id)
+        public async Task<ActionResult> DeleteAuthor([FromRoute] int id)
         {
             var author = await _authorService.DeleteAuthor(id);
             if (author == null)
